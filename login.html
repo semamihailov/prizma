@@ -13,7 +13,7 @@
 <main class="main login">
     <div class="login-header">
         <div class="login-prev-button-container">
-            <a href="index.html" class="steps-header-button">
+            <a href="steps.html" class="steps-header-button">
                 <img src="./images/arrow-prev-icon.svg" alt="">
             </a>
             <img src="./images/logo.svg" alt="">
@@ -27,10 +27,20 @@
             <input type="text" placeholder="Имя" class="login-form-input">
         </div>
         <div class="login-form-item">
-            <input type="text" placeholder="Возраст" class="login-form-input">
+            <input type="number" placeholder="Возраст" class="login-form-input">
         </div>
         <div class="login-form-item">
-            <input type="text" placeholder="Пол" class="login-form-input">
+            <div class="custom-select">
+                <div class="select-selected">
+                    <span class="select-placeholder">Пол</span>
+                    <img src="./images/arrow-bottom-icon.svg" alt="" class="custom-arrow">
+                </div>
+                <div class="select-options" id="selectOptions">
+                    <div class="option" data-value="male">Мужской</div>
+                    <div class="option" data-value="female">Женский</div>
+                </div>
+                <input type="hidden" name="gender" id="genderInput">
+            </div>
         </div>
     </div>
     <a class="button" href="question.html">Продолжить</a>
