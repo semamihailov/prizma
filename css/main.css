@@ -561,6 +561,7 @@ body{
     color: #000;
     height: 300px;
     width: 100%;
+    resize: none;
 }
 
 
@@ -839,9 +840,10 @@ body{
 }
 .answers{
     padding: 50px 26px;
+    max-width: 375px;
 }
 .answers-title{
-    margin-bottom: 55px;
+    margin-bottom: 33px;
     font-size: 26px;
 }
 .answers-logo {
@@ -850,8 +852,29 @@ body{
 .button-answers{
     font-size: 20px;
 }
+#answers-acc{
+    margin-bottom: 35px;
+}
+#answers-acc .ui-accordion-header{
+    padding: 22px 0;
 
-
+    font-family: var(--font-family),sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 118%;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e5e5;
+}
+#answers-acc .ui-accordion-header-active{
+    border-bottom: none;
+}
+#answers-acc .ui-accordion-content p{
+    font-family: var(--font-family),sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 118%;
+    color: #1f2937;
+}
 @media screen and (max-width: 361px) {
     .button-download img{
         max-width: 309px;

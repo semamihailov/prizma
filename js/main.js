@@ -44,4 +44,10 @@ $(function() {
             $(".select-selected").css(closedStyle);
         }
     });
+
+    $( "#answers-acc").accordion({
+        collapsible: true,
+        active: false,
+    });
+
 });
