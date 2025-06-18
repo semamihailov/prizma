@@ -15,8 +15,8 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
-    height: 100%;
     width: 100%;
+    height: 100%;
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
@@ -161,11 +161,24 @@ body{
     text-align: center;
     color: #fff;
 }
+.button-gray{
+    font-family: var(--font-family),sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #5e5e5e;
+    background: #e5e5e5;
+    margin-top: 20px;
+}
 .button:disabled{
     background: #d6d8d9;
 }
 .button-triangle{
+    display: flex;
     position: relative;
+    min-height: 67px;
 }
 .button-triangle img{
     width: 100%;
@@ -519,6 +532,14 @@ body{
 
     margin-bottom: 70px;
 }
+.micro-container{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -45px;
+}
 
 .write-icon {
     display: flex;
@@ -543,24 +564,326 @@ body{
 }
 
 
+/*------------------------------------------------------------
+                         DOWNLOAD.HTML
+------------------------------------------------------------*/
+
+.bodyDownload{
+    background: linear-gradient(224deg, #f3f8ff 0%, #fff 100%);
+}
+.download{
+    max-width: 375px;
+    padding: 50px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.download-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.download-title{
+    font-size: 23px;
+    margin-top: 35px;
+    max-width: 345px;
+}
+.button-download img{
+   width: 309px;
+    max-width: unset;
+    height: unset;
+}
+.button-download span{
+    font-size: 19px;
+}
+.download-file{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.03);
+    border: 1px solid #e6e6e6;
+    border-radius: 25px;
+    padding: 25px 16px;
+    background: #EAF3FF;
+
+    max-width: 318px;
+}
+.download-file-text{
+    font-family: var(--third-family),sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+    color: #1f2937;
+}
+.download-file-text span{
+    font-weight: 800;
+}
 
 
+/*------------------------------------------------------------
+                         PRICE.HTML
+------------------------------------------------------------*/
+
+.bodyPrice{
+    background: linear-gradient(224deg, #f3f8ff 0%, #fff 100%);
+}
+.price{
+    max-width: 375px;
+    padding: 50px 12px;
+}
+
+.button-price{
+    font-size: 20px;
+}
+.price-logo {
+    margin-bottom: 55px;
+}
+.price-plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+
+    margin-bottom: 52px;
+}
+.free-price-plan {
+    /*width: calc(40% + 12px);*/
+    width: 42%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background: rgba(242, 242, 242, 0.7);
+}
+.paid-price-plan {
+    /*width: calc(51% + 12px);*/
+    width: 55%;
+    padding: 15px 19px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(217deg, rgba(167, 233, 255, 0.19) 0%, rgba(255, 149, 190, 0.19) 45.67%, rgba(155, 88, 251, 0.19) 100%);
+}
+.price-plan-title {
+    font-family: var(--second-family),sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 138%;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.price-plan-price {
+    text-align: center;
+    font-family: var(--third-family),sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 132%;
+    color: #1f2937;
+}
+
+.price-plan-advantages {
+    max-width: 115px;
+    margin: 18px auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.price-plan-advantage {
+    font-family: var(--third-family),sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 132%;
+    text-align: center;
+    color: #1f2937;
+}
+.price-plan-advantage span{
+    font-weight: 700;
+}
+.price-plan-action {
+    text-wrap: nowrap;
+    font-family: var(--font-family),sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+    color: #1f2937;
+
+    margin-top: 35px;
+}
+.paid-price-plan-container {
+}
+
+.paid-price-plan-current-price {
+    font-family: var(--font-family),sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #9b58fb;
+}
+
+.paid-price-plan-old-price {
+    text-align: center;
+    font-family: var(--font-family),sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1f2937;
+}
+.paid-price-plan-old-price span{
+    text-decoration: line-through;
+}
+.paid-price-plan-action {
+    border-radius: 10px;
+    background: #fd5f91;
+    padding: 9px;
+
+    font-family: var(--font-family),sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 128%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+.action-time {
+    font-size: 19px;
+    letter-spacing: 0.09em;
+    display: block;
+    margin-top: 10px;
+}
+
+.price-link {
+    display: block;
+    font-family: var(--font-family),sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.32);
+    margin-top: 23px;
+}
+.price-link:last-child{
+    margin-top: 13px;
+}
+
+/*------------------------------------------------------------
+                         PAYMENT.HTML
+------------------------------------------------------------*/
+
+.bodyPayment{
+    background: linear-gradient(224deg, #fef6fe 0%, #f2f7ff 100%);
+}
+.payment{
+    max-width: 375px;
+}
+.payment-body {
+    margin-bottom: 35px;
+    text-align: center;
+}
+.payment-icon {
+    max-width: 100px;
+    margin: 50px auto 35px;
+}
+.payment-title {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+.payment-price {
+    font-family: var(--font-family),sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 118%;
+    text-align: center;
+    color: #1f2937;
+
+    margin-bottom: 60px;
+}
+
+.payment-text {
+    font-family: var(--font-family),sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+    text-align: center;
+    color: #1f2937;
+    max-width: 259px;
+    margin: auto;
+}
+.payment-text span{
+    font-weight: 600;
+    line-height: 132%;
+    display: block;
+    margin-top: 7px;
+}
+.uncomplete-payment-title{
+    max-width: 275px;
+}
+.uncomplete-payment-text{
+    margin-bottom: 35px;
+}
+
+/*------------------------------------------------------------
+                         PAYMENT.HTML
+------------------------------------------------------------*/
+
+.bodyAnswers{
+    background: linear-gradient(224deg, #fef6fe 0%, #f2f7ff 100%);
+}
+.answers{
+    padding: 50px 26px;
+}
+.answers-title{
+    margin-bottom: 55px;
+    font-size: 26px;
+}
+.answers-logo {
+    margin-bottom: 55px;
+}
+.button-answers{
+    font-size: 20px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 361px) {
+    .button-download img{
+        max-width: 309px;
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .button-download span{
+        font-size: 17px;
+    }
+    .download-file{
+        column-gap: 15px;
+        padding: 20px 10px;
+    }
+    .free-price-plan{
+        padding: 15px 7px;
+    }
+    .paid-price-plan{
+        padding: 15px 10px;
+    }
+    .paid-price-plan-action{
+        font-size: 10px;
+    }
+    .action-time{
+        font-size: 18px;
+        margin-top: 7px;
+    }
+    .payment-icon {
+        margin: 40px auto 25px;
+    }
+}
 
 
 
