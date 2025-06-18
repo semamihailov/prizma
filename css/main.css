@@ -186,7 +186,10 @@ body{
     height: 67px;
 }
 .button-triangle span{
-    display: block;
+    width: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-wrap: nowrap;
     position: absolute;
     left: 50%;
@@ -537,13 +540,15 @@ body{
 
     margin-bottom: 70px;
 }
-.micro-container{
+.micro-button{
     width: 90px;
     height: 90px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: -45px;
+    background: transparent;
+    border-radius: 50%;
 }
 
 .write-icon {
@@ -600,6 +605,7 @@ body{
 }
 .button-download span{
     font-size: 19px;
+    width: 247px;
 }
 .download-file{
     display: flex;
