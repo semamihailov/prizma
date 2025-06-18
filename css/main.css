@@ -164,6 +164,29 @@ body{
 .button:disabled{
     background: #d6d8d9;
 }
+.button-triangle{
+    position: relative;
+}
+.button-triangle img{
+    width: 100%;
+    max-width: 298px;
+    height: 67px;
+}
+.button-triangle span{
+    text-wrap: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family),sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+}
+
 .linear-text{
     font-family: var(--second-family),sans-serif;
     font-weight: 400;
@@ -447,6 +470,100 @@ body{
 
     margin-top: 90px;
 }
+
+
+/*------------------------------------------------------------
+                         QUESTION.HTML
+------------------------------------------------------------*/
+
+.bodyQuestion{
+    background: linear-gradient(177deg, #fff 5.29%, #d0eaf7 35.1%, #fbd6e8 68.75%, #fff 100%);
+}
+.question{
+    max-width: 375px;
+    padding: 50px 26px;
+}
+.question-prev-button-container{
+    position: relative;
+}
+.question-num{
+    font-size: 23px;
+}
+.question-num span{
+    font-size: 25px;
+}
+.question-header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.question-title{
+    font-family: var(--second-family),sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #1f2937;
+    max-width: 240px;
+    margin: 45px auto 0 auto;
+}
+.question-area-container {
+    position: relative;
+    background: linear-gradient(45deg, #fffeff 90.56%);
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 0px 20px;
+    width: 100%;
+    min-height: 358px;
+
+    margin-bottom: 70px;
+}
+
+.write-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.write-icon span{
+    font-family: var(--font4),sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #9f9f9f;
+}
+.question-area {
+    font-family: var(--font4),sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 131%;
+    color: #000;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

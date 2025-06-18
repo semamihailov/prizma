@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>PRIZMA</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="bodyQuestion">
 
+<main class="main question">
+    <div class="question-header">
+        <div class="question-prev-button-container">
+            <a href="login.html" class="steps-header-button">
+                <img src="./images/arrow-prev-icon.svg" alt="">
+            </a>
+            <h1 class="question-num linear-text">Вопрос <span class="current-question">3</span> из <span class="question-count">15</span></h1>
+        </div>
+        <p class="question-title">Расскажите о своих главных ценностях
+            в жизни</p>
+    </div>
+    <div class="question-area-container">
+        <div class="write-icon">
+            <span>...</span>
+            <img src="./images/pencil-icon.svg" alt="">
+        </div>
+        <textarea name="" class="question-area"></textarea>
+    </div>
+    <a class="button-triangle" href="download.html">
+        <span>Следующий вопрос</span>
+        <img src="./images/button-triangle.svg" alt="">
+        </a>
+</main>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
