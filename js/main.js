@@ -50,4 +50,17 @@ $(function() {
         active: false,
     });
 
+
+    const textarea = document.querySelector('.question-area');
+    const writeIcon = document.querySelector('.write-icon');
+
+    textarea.addEventListener('focus', () => {
+        writeIcon.style.visibility = 'hidden';
+    });
+
+    textarea.addEventListener('blur', () => {
+        // Если нужно возвращать иконку при потере фокуса:
+        writeIcon.style.visibility = 'visible';
+    });
+
 });
