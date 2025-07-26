@@ -138,10 +138,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     --font4: "Open Sans", sans-serif;
     --font5: "Jura", sans-serif;
 }
+html{
+    min-height: 100%;
+    height: auto;
+}
 body{
     font-family: var(--font-family),sans-serif;
     font-weight: 500;
-    min-height: 100vh;
+    min-height: 100%;
+    height: 100%;
 }
 .button {
     display: flex;
@@ -210,7 +215,8 @@ body{
 }
 .main{
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -224,6 +230,7 @@ body{
 .main.index{
     max-width: 295px;
     padding: 0;
+    padding-top: 50px;
 }
 .bodyIndex{
     background: linear-gradient(220deg, #f5a9cf 0%, #fff 44.39%, #bfe3f5 100%);
@@ -335,7 +342,7 @@ body{
     background: linear-gradient(136deg, #c7e6f6 0%, #fff 49.52%, #f9c8e0 100%);
 }
 .login{
-    padding: 0 26px;
+    padding: 50px 26px 0 26px;
     max-width: 375px;
 }
 .login-header {
@@ -479,6 +486,7 @@ body{
 
 .loading{
     max-width: 375px;
+    padding-top: 50px;
 }
 .bodyLoading{
     background: linear-gradient(224deg, #fef6fe 0%, #f2f7ff 100%);
@@ -587,8 +595,12 @@ body{
     padding: 14px;
     border-radius: 5px;
     border: 1px solid #F5F5F5;
+    background: transparent;
+
     box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.06);
-    background: linear-gradient(45deg, #fffeff 0%, #f0f0f0 90.56%);
+    background: linear-gradient(45deg, rgba(255, 254, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 90.56%);
+    position: relative;
+    z-index: 1;
 }
 /*------------------------------------------------------------
                          DOWNLOAD.HTML
@@ -616,7 +628,7 @@ body{
     width: 100%;
     border-radius: 15px;
     padding: 30px 10px 20px;
-    background: linear-gradient(45deg, #fffeff 0%, #f0f0f0 90.56%);
+    background: linear-gradient(45deg, rgba(255, 254, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 90.56%);
     position: relative;
 }
 .decoding-base{
@@ -962,6 +974,7 @@ body{
 }
 .payment{
     max-width: 375px;
+    padding-top: 50px;
 }
 .payment-body {
     margin-bottom: 35px;
